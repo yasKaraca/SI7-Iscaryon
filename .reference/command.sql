@@ -1,4 +1,4 @@
-CREATE SCHEMA `iscaryon`
+/*CREATE SCHEMA `iscaryon`
 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 USE `iscaryon`;
@@ -45,7 +45,7 @@ INSERT INTO
 VALUES
 (NULL, 'Yasin', 'Alimentaire', 'Terre', '2018-06-22', '2018-06-25', '9999999999', '999')
 ;
-
+*/
 CREATE SCHEMA `space`
 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 

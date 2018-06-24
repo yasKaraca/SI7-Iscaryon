@@ -8,12 +8,12 @@
         <input type="email" name="email">
     </fieldset>
     <fieldset>
-        <label for="password">Mot de passe :</label>
-        <input type="password" name="password">
+        <label for="mdp">Mot de passe :</label>
+        <input type="password" name="mdp">
     </fieldset>
     <fieldset>
-        <label for="passwordConfirm">Confirmer mot de passe :</label>
-        <input type="password" name="passwordConfirm">
+        <label for="mdp-confirm">Confirmer mot de passe :</label>
+        <input type="password" name="mdp-confirm">
     </fieldset>
     <fieldset>
         <label for="planet">Planète d'origine :</label>
