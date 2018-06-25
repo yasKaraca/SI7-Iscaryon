@@ -9,11 +9,12 @@ require_once 'include/connection.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="js/jqery.js"></script>
 </head>
 <body>
 
 <?php
- include 'addUser.php';
+ include 'login.php';
 ?>
 </body>
 </html>

@@ -51,21 +51,19 @@ DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 USE `space`;
 
-CREATE TABLE `user` (
+CREATE TABLE `space`.`user` (
 `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 `nom` VARCHAR(50) NOT NULL,
 `email` VARCHAR(50) NOT NULL,
 `mdp` VARCHAR(50) NOT NULL,
-`mdp-confirm` VARCHAR(50) NOT NULL,
 `planet` VARCHAR(50) NOT NULL,
-`category` VARCHAR(50) NOT NULL,
 PRIMARY KEY (`id`)
 );
 
 INSERT INTO
 `user`
-(`id`, `nom`, `email`, `mdp`, `mdp-confirm`, `planete`, `categorie`)
+(`id`, `nom`, `email`, `mdp`, `planet`)
 VALUES
-(NULL, 'Yasin', 'yasin.karaca@outlook.fr', 'blabla', 'blabla', 'Terre', 'Alimentaire')
+(NULL, 'Yasin', 'yasin.karaca@outlook.fr', 'blabla', 'Terre')
 ;
 

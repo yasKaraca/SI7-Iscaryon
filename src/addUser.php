@@ -1,36 +1,37 @@
-<form action="doAddUser.php" method="post">
-    <fieldset>
+<form action="doadd.php" method="post">
+    <div>
         <label for="nom">Votre nom :</label>
-        <input type="text" name="nom">
-    </fieldset>
-    <fieldset>
+        <input title="nom" type="text" name="nom" required>
+    </div>
+    <div>
         <label for="email">Adresse e-mail :</label>
-        <input type="email" name="email">
-    </fieldset>
-    <fieldset>
+        <input title="email" type="email" name="email" required>
+    </div>
+    <div>
         <label for="mdp">Mot de passe :</label>
-        <input type="password" name="mdp">
-    </fieldset>
-    <fieldset>
+        <input id="password" title="mdp" type="password" name="mdp" required>
+    </div>
+    <div>
         <label for="mdp-confirm">Confirmer mot de passe :</label>
-        <input type="password" name="mdp-confirm">
-    </fieldset>
-    <fieldset>
+        <input id="confirmPassword" title="mdp-confirm" type="password" name="mdp-confirm" required>
+        <span id="message"></span>
+    </div>
+    <div>
         <label for="planet">Planète d'origine :</label>
-        <input type="text" name="planet">
-    </fieldset>
-    <fieldset>
-        <label for="category">Type de commerce :</label>
-        <select name="category">
-            <option value="alimentaire">Alimentaire</option>
-            <option value="technologie">Technologie</option>
-            <option value="textile">Textile</option>
-            <option value="pierres précieuses">Pierres précieuses</option>
-            <option value="bazar">Bazar</option>
-            <option value="autre">Autre</option>
-        </select>
-    </fieldset>
-    <fieldset>
+        <input title="planet" type="text" name="planet" required>
+    </div>
+    <div>
         <input type="submit" value="S'inscire sur Iscaryon">
-    </fieldset>
+    </div>
 </form>
+
+<script type="text/javascript">
+    $('#password, #confirmPassword').on('keyup', function () {
+        if ($('#password').val() == $('#confirmPassword').val()) {
+            $('#message').html('Mot de passe confirmé').css('color', 'green');
+        } else
+            $('#message').html('Mot de passe non confirmé').css('color', 'red');
+    });
+    
+</script>
+
