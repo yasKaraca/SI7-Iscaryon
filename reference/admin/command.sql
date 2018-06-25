@@ -11,6 +11,7 @@ CREATE TABLE `iscaryon`.`place` (
 `datedebut` DATE NOT NULL,
 `datefin` DATE NOT NULL,
 `cbnum` VARCHAR(50) NOT NULL,
+`cryptograme` VARCHAR(50) NOT NULL,
 PRIMARY KEY (`id`)
 );
 
@@ -22,6 +23,7 @@ CREATE TABLE `iscaryon`.`abonnement` (
 `datedebut` DATE NOT NULL,
 `duree` INT NOT NULL,
 `cbnum` VARCHAR(50) NOT NULL,
+`cryptograme` VARCHAR(50) NOT NULL,
 PRIMARY KEY (`id`)
 );
 
@@ -33,5 +35,6 @@ CREATE TABLE `iscaryon`.`hebergement` (
 `datedebut` DATE NOT NULL,
 `datefin` DATE NOT NULL,
 `cbnum` VARCHAR(50) NOT NULL,
+`cryptograme` VARCHAR(50) NOT NULL,
 PRIMARY KEY (`id`)
 );
