@@ -15,20 +15,18 @@
 $stmt=$conn->prepare($account);
 $stmt->bindValue(':id', $_SESSION['id']);
 $stmt->execute();
-$infos = $stmt ->fetchAll();
+$infos = $stmt ->fetch(PDO::FETCH_ASSOC);
 
 include 'header.php';
 
-foreach ($infos as $info) {
     echo '<div>';
-    echo '<p>Nom : '.$info['nom'].'</p>';
-    echo '<p>E-mail : '.$info['email'].'</p>';
+    echo '<p>Nom : '.$infos['nom'].'</p>';
+    echo '<p>E-mail : '.$infos['email'].'</p>';
     echo '<p>Mot de passe : ********</p>';
-    echo '<p>Planète : '.$info['planet'].'</p>';
-    echo '<a href="editAccount.php?id='.$info['id'].'">Modifier informations</a></br>';
-    echo '<a href="deleteAccount.php?id='.$info['id'].'">Supprimer mon compte</a>';
+    echo '<p>Planète : '.$infos['planet'].'</p>';
+    echo '<a href="editAccount.php?id='.$infos['id'].'">Modifier informations</a></br>';
+    echo '<a href="deleteAccount.php?id='.$infos['id'].'">Supprimer mon compte</a>';
     echo '</div>';
-}
 ?>
 
 <a href="index.php">accueil</a>

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7906a0a5-da6f-4f57-ac6a-5b1b114355c6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/account.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/deleteRent.php" afterPath="$PROJECT_DIR$/src/deleteRent.php" />
-      <change beforePath="$PROJECT_DIR$/src/header.php" afterPath="$PROJECT_DIR$/src/header.php" />
-      <change beforePath="$PROJECT_DIR$/src/headerConnect.php" afterPath="$PROJECT_DIR$/src/headerConnect.php" />
+      <change beforePath="$PROJECT_DIR$/src/account.php" afterPath="$PROJECT_DIR$/src/account.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,10 +72,10 @@
       <file leaf-file-name="account.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
               <folding>
-                <marker date="1530027839741" expanded="true" signature="65:175" ph="SELECT `id`,... user" />
+                <marker date="1530030240283" expanded="true" signature="65:175" ph="SELECT `id`,... user" />
               </folding>
             </state>
           </provider>
@@ -154,9 +150,9 @@
         <option value="$PROJECT_DIR$/src/doRent.php" />
         <option value="$PROJECT_DIR$/src/deleteRent.php" />
         <option value="$PROJECT_DIR$/src/rent.php" />
-        <option value="$PROJECT_DIR$/src/account.php" />
         <option value="$PROJECT_DIR$/src/headerConnect.php" />
         <option value="$PROJECT_DIR$/src/header.php" />
+        <option value="$PROJECT_DIR$/src/account.php" />
       </list>
     </option>
   </component>
@@ -277,12 +273,12 @@
       <workItem from="1529878307209" duration="1722000" />
       <workItem from="1529880196546" duration="185000" />
       <workItem from="1529915810910" duration="21653000" />
-      <workItem from="1530006055062" duration="13991000" />
+      <workItem from="1530006055062" duration="14178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56663000" />
+    <option name="totallyTimeSpent" value="56850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1430" height="781" extended-state="0" />
@@ -722,10 +718,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/account.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
           <folding>
-            <marker date="1530027839741" expanded="true" signature="65:175" ph="SELECT `id`,... user" />
+            <marker date="1530030240283" expanded="true" signature="65:175" ph="SELECT `id`,... user" />
           </folding>
         </state>
       </provider>
