@@ -20,8 +20,6 @@ if ($_SESSION['auth']) {
     include 'login.php';
     // include 'addUser.php'; rediriger vers une page d'inscription
 }
-var_dump($_SESSION);
-
 ?>
 
 </body>
