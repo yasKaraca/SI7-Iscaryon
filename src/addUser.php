@@ -1,3 +1,4 @@
+<?php include 'header.php'?>
 <form action="doAddUser.php" method="post">
     <div>
         <label for="nom">Votre nom :</label>

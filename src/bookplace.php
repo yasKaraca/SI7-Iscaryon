@@ -1,5 +1,5 @@
 <?php
-session_start();
+    include 'header.php';
 ?>
 <form action="doBookPlace.php" method="post">
     <div>

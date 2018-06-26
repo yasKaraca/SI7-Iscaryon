@@ -12,12 +12,16 @@
     `place`
     WHERE
     `email` = :email
+    ORDER BY
+    id DESC 
     ;";
 
 $stmt=$conn->prepare($myresa);
 $stmt->bindValue(':email', $_SESSION['email']);
 $stmt->execute();
 $bookings = $stmt -> fetchAll();
+
+include "header.php";
 
 foreach ($bookings as $booking) {
     echo '<div>';
@@ -31,3 +35,5 @@ foreach ($bookings as $booking) {
     echo '</div>';
 }
 ?>
+
+<a href="index.php">accueil</a>
