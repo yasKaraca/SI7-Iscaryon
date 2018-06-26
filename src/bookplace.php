@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<form action="dobookplace.php" method="post">
+<form action="doBookPlace.php" method="post">
     <div>
         <label for="category">Quel type de produit vendez vous ?</label>
         <select title="category" name="category">

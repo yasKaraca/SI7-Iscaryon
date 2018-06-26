@@ -1,4 +1,4 @@
-<form action="doadd.php" method="post">
+<form action="doAddUser.php" method="post">
     <div>
         <label for="nom">Votre nom :</label>
         <input title="nom" type="text" name="nom" required>
