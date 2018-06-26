@@ -15,6 +15,7 @@ if ($_SESSION['auth']) {
     include 'headerConnect.php';
 } else {
     include 'login.php';
+    // include 'addUser.php'; rediriger vers une page d'inscription
 }
 var_dump($_SESSION);
 

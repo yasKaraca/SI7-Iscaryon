@@ -30,7 +30,7 @@ session_start();
         <input title="cryptogramme" type="text" name="crypt" required>
     </div>
     <div>
-        <input type="submit" value="S'inscire sur Iscaryon">
+        <input type="submit" value="Réserver un emplacement">
     </div>
 </form>
 <?php
