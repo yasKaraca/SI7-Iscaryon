@@ -6,6 +6,9 @@
   border-top: 2px solid #171E3A;
   margin-top: 3vh;
   padding: 20px 0;
+  @include for-size(tablet-landscape-up) {
+    margin-top: 6vh;
+  }
   &-top {
     display: flex;
     justify-content: center;

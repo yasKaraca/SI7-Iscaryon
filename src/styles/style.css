@@ -209,6 +209,9 @@ a {
   border-top: 2px solid #171E3A;
   margin-top: 3vh;
   padding: 20px 0; }
+  @media (min-width: 949px) {
+    .footer {
+      margin-top: 6vh; } }
   .footer-top {
     display: flex;
     justify-content: center; }
@@ -242,14 +245,31 @@ a {
   @media (min-width: 1200px) {
     .form-container {
       width: 70%; } }
+  @media (min-width: 949px) {
+    .form-container {
+      margin: 10vh auto 0 auto; } }
   .form-container-title {
     text-align: center;
     font-family: 'Ailerons';
-    font-size: 2rem; }
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 20px; }
+    @media (min-width: 949px) {
+      .form-container-title {
+        margin-top: 50px; } }
+  @media (min-width: 949px) {
+    .form-container-content {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px; } }
   .form-container-content-item {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 20px 0; }
+    @media (min-width: 949px) {
+      .form-container-content-item {
+        width: 50%; } }
     .form-container-content-item input {
       width: 90%;
       text-align: center;
@@ -265,6 +285,73 @@ a {
       color: white;
       opacity: 0.5;
       font-family: 'Ubuntu', sans-serif; }
+    .form-container-content-item #message {
+      font-family: 'Ubuntu', sans-serif;
+      margin-top: 10px; }
+
+.send {
+  margin: 20px auto; }
+
+#messageDiv {
+  text-align: center;
+  width: 100%; }
+
+.logintitle {
+  color: white;
+  text-align: center;
+  font-family: 'Ailerons';
+  font-size: 2rem;
+  margin-top: 20px; }
+  @media (min-width: 949px) {
+    .logintitle {
+      margin-top: 50px; } }
+
+.login {
+  height: 50vh; }
+  @media (min-width: 949px) {
+    .login {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px; } }
+  .login-item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0; }
+    @media (min-width: 949px) {
+      .login-item {
+        width: 50%; } }
+    .login-item input {
+      width: 90%;
+      text-align: center;
+      height: 40px;
+      background-color: rgba(107, 106, 106, 0.25);
+      border: 1px solid #8B8787;
+      color: white; }
+    .login-item input::placeholder {
+      color: white;
+      opacity: 0.5;
+      font-family: 'Ubuntu', sans-serif; }
+    .login-item input::value {
+      color: white;
+      opacity: 0.5;
+      font-family: 'Ubuntu', sans-serif; }
+
+.center {
+  margin: 0 auto; }
+
+.registerLink {
+  margin-left: 5%;
+  width: 180px;
+  height: 40px;
+  background-color: rgba(0, 106, 97, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #006A61; }
+  .registerLink a {
+    color: white;
+    font-family: 'Ubuntu', sans-serif; }
 
 @font-face {
   font-family: 'Ailerons';

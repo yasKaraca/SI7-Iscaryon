@@ -23,16 +23,18 @@ if ($_SESSION['auth']) {
         <input title="email" type="email" name="email" placeholder="E-mail (ex: iscaryon@net.com)" required>
     </div>
     <div class="form-container-content-item">
+        <input title="planet" type="text" name="planet" placeholder="Planète d'origine" required>
+    </div>
+    <div class="form-container-content-item">
         <input id="password" title="mdp" type="password" name="mdp" placeholder="Mot de passe ..." required>
     </div>
     <div class="form-container-content-item">
         <input id="confirmPassword" title="mdp-confirm" type="password" name="mdp-confirm" placeholder="Confirmer mot de passe" required>
-        <span id="message"></span>
     </div>
-    <div class="form-container-content-item">
-        <input title="planet" type="text" name="planet" placeholder="Planète d'origine" required>
+    <div id="messageDiv" class="form-container-content-item">
+        <p id="message"></p>
     </div>
-    <div class="form-container-content-item">
+    <div class="form-container-content-item send">
         <input type="submit" value="S'inscire sur Iscaryon">
     </div>
 </form>
