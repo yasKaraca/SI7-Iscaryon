@@ -8,6 +8,7 @@ require_once "include/connection.php";
 $account = "SELECT 
     `id`,
     `nom`,
+    `prenom`,
     `email`,
     `mdp`,
     `planet`
@@ -29,6 +30,10 @@ include 'header.php';
     <div>
         <label for="nom">Votre nom :</label>
         <input title="nom" type="text" name="nom" value="<?= $row['nom'] ?>" required>
+    </div>
+    <div>
+        <label for="nom">Votre prenom :</label>
+        <input title="nom" type="text" name="prenom" value="<?= $row['prenom'] ?>" required>
     </div>
     <div>
         <label for="email">Adresse e-mail :</label>

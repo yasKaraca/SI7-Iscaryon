@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: rgba(24,28,44,0.6);
+  border-top: 2px solid #171E3A;
+  border-bottom: 2px solid #171E3A;;
+  height: 70px;
+}
+
+.burger {
+  width: 25px;
+  right: 20px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.nav {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: rgba(19,21,30,0.9);
+  padding: 7vh 0;
+  z-index: 100;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  &-item {
+    text-align: center;
+    height: 15vh;
+    &-link {
+      color: white;
+      font-family: 'Ailerons';
+      font-size: 2rem;
+    }
+  }
+}

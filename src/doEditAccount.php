@@ -1,6 +1,6 @@
 <?php
 
-if(!isset($_POST['nom']) || $_POST['nom']==="" || !isset($_POST['email']) || $_POST['email']==="" || !isset($_POST['mdp']) || $_POST['mdp']==="" || !isset($_POST['mdp-confirm']) || $_POST['mdp-confirm']==="" || !isset($_POST['planet']) || $_POST['planet']==="")
+if(!isset($_POST['nom']) || $_POST['nom']==="" || !isset($_POST['prenom']) || $_POST['prenom']==="" || !isset($_POST['email']) || $_POST['email']==="" || !isset($_POST['mdp']) || $_POST['mdp']==="" || !isset($_POST['mdp-confirm']) || $_POST['mdp-confirm']==="" || !isset($_POST['planet']) || $_POST['planet']==="")
 {
     header('Location: account.php?error=nopostdatacreate');
     exit();
@@ -17,6 +17,7 @@ $edit = "UPDATE
     `user`
     SET
     `nom` = :nom,
+    `prenom` = :prenom,
     `email` = :email,
     `mdp` = :mdp,
     `planet` = :planet
@@ -27,6 +28,7 @@ $edit = "UPDATE
 $stmt = $conn->prepare($edit);
 $stmt->bindValue(':id', $_POST['id']);
 $stmt->bindValue(':nom', $_POST['nom']);
+$stmt->bindValue(':prenom', $_POST['prenom']);
 $stmt->bindValue(':email', $_POST['email']);
 $stmt->bindValue(':mdp', $_POST['mdp']);
 $stmt->bindValue(':planet', $_POST['planet']);

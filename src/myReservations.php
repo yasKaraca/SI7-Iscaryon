@@ -3,6 +3,7 @@
     $myresa = "SELECT
     `id`,
     `nom`,
+    `prenom`,
     `email`,
     `planet`,
     `category`,
@@ -26,6 +27,7 @@ include "header.php";
 foreach ($bookings as $booking) {
     echo '<div>';
     echo '<p>'.$booking['nom'].'</p>';
+    echo '<p>'.$booking['prenom'].'</p>';
     echo '<p>'.$booking['email'].'</p>';
     echo '<p>'.$booking['planet'].'</p>';
     echo '<p>'.$booking['category'].'</p>';

@@ -1,0 +1,68 @@
+.form-container {
+  width: 90%;
+  margin: 5vh auto 0 auto;
+  color: white;
+  @include for-size(desktop-up) {
+    width: 70%;
+  }
+  @include for-size(tablet-landscape-up) {
+    margin: 10vh auto 0 auto;
+  }
+  &-title {
+    text-align: center;
+    font-family: 'Ailerons';
+    font-size: 2rem;
+    width: 100%;
+    margin-top: 20px;
+    @include for-size(tablet-landscape-up) {
+      margin-top: 50px;
+    }
+  }
+  &-content {
+    @include for-size(tablet-landscape-up) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    &-item {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+      @include for-size(tablet-landscape-up) {
+        width: 50%;
+      }
+      & input {
+        width: 90%;
+        text-align: center;
+        height: 40px;
+        background-color: rgba(107,106,106,0.25);
+        border: 1px solid #8B8787;
+        color: white;
+      }
+      & input::placeholder {
+        color: white;
+        opacity: 0.5;
+        font-family: 'Ubuntu', sans-serif;
+      }
+      & input::value {
+        color: white;
+        opacity: 0.5;
+        font-family: 'Ubuntu', sans-serif;
+      }
+      & #message {
+        font-family: 'Ubuntu', sans-serif;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.send {
+  margin: 20px auto;
+}
+
+#messageDiv {
+  text-align: center;
+  width: 100%;
+}

@@ -39,6 +39,7 @@ include 'include/connection.php';
 $myrent = "SELECT
     `id`,
     `nom`,
+    `prenom`,
     `email`,
     `category`,
     `dateBegin`,
@@ -59,6 +60,7 @@ $rents = $stmt -> fetchAll();
 foreach ($rents as $rent) {
     echo '<div>';
     echo '<p>'.$rent['nom'].'</p>';
+    echo '<p>'.$rent['prenom'].'</p>';
     echo '<p>'.$rent['email'].'</p>';
     echo '<p>'.$rent['category'].'</p>';
     echo '<p>'.$rent['dateBegin'].'</p>';
