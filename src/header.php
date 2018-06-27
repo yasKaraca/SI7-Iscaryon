@@ -11,16 +11,10 @@ session_start();
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script src="js/jqery.js"></script>
 </head>
-<body>
+<body class="body">
 
-<?php
-if ($_SESSION['auth']) {
-    include 'headerConnect.php';
-} else {
-    include 'login.php';
-    // include 'addUser.php'; rediriger vers une page d'inscription
-}
-?>
+<header class="header">
+    <a href="index.php"><img src="img/logomobile.png"></a>
+    <img class="burger" src="img/menu.svg">
+</header>
 
-</body>
-</html>
