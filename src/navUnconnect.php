@@ -4,3 +4,15 @@
         <li class="nav-item"><a class="nav-item-link" href="login.php">Connexion</a></li>
     </ul>
 </nav>
+<script type="text/javascript">
+    var open = false;
+    $('.burger').click(function () {
+        if(open) {
+            $('.nav').css('display', 'none');
+            open = false;
+            return;
+        }
+        $('.nav').css('display', 'block');
+        open = true;
+    })
+</script>

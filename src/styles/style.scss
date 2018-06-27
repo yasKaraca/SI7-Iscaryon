@@ -2,14 +2,27 @@
 @import "mixins/forsize";
 @import "components/_reset.scss";
 @import "components/_header.scss";
+@import "components/_home.scss";
+@import "components/_footer.scss";
+@import "components/_register.scss";
 
 @font-face {
   font-family: 'Ailerons';
   src: url('../fonts/ailerons-typeface-webfont.woff2') format('woff2'),
   url('../fonts/ailerons-typeface-webfont.woff') format('woff'),
-  url('../fonts/ailerons-typeface-webfont.ttf') format('ttf');
+  url('../fonts/ailerons-typeface-webfont.ttf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu-Regular.ttf") format('opentype');
+}
+
+@font-face {
+  font-family: 'Ubuntu Light';
+  src: url("../fonts/Ubuntu-Light.ttf") format('opentype');
 }
 
 .body {

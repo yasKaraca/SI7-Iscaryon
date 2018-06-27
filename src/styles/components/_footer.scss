@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(24,28,44,0.6);
+  border-top: 2px solid #171E3A;
+  margin-top: 3vh;
+  padding: 20px 0;
+  &-top {
+    display: flex;
+    justify-content: center;
+    &-text {
+      color: white;
+      margin-left: 10px;
+      font-family: 'Ubuntu Light', sans-serif;
+    }
+  }
+  &-mid {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    &-text {
+      color: white;
+      margin: 0 5px;
+      font-family: 'Ubuntu Light', sans-serif;
+      @include for-size(desktop-up) {
+        margin: 0 20px;
+      }
+    }
+  }
+  &-bot {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    &-text {
+      color: white;
+      font-family: 'Ubuntu Light', sans-serif;
+    }
+  }
+}

@@ -12,13 +12,14 @@ require_once 'include/connection.php';
 
 $rent = "INSERT INTO 
 `rent`
-(`id`, `nom`, `email`, `category`, `dateBegin`, `dateEnd`, `card`, `numb`)
+(`id`, `nom`, `prenom`, `email`, `category`, `dateBegin`, `dateEnd`, `card`, `numb`)
 VALUES 
-(NULL, :nom, :mail, :category, :date1, :date2, :cb, :crypt)
+(NULL, :nom, :prenom, :mail, :category, :date1, :date2, :cb, :crypt)
 ;";
 
 $stmt = $conn->prepare($rent);
 $stmt->bindValue(':nom', $_SESSION['nom']);
+$stmt->bindValue(':prenom', $_SESSION['prenom']);
 $stmt->bindValue(':mail', $_SESSION['email']);
 $stmt->bindValue(':category', $_POST['category']);
 $stmt->bindValue(':date1', $_POST['date1']);

@@ -54,6 +54,7 @@ USE `space`;
 CREATE TABLE `space`.`user` (
 `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 `nom` VARCHAR(50) NOT NULL,
+`prenom` VARCHAR(50) NOT NULL,
 `email` VARCHAR(50) NOT NULL,
 `mdp` VARCHAR(50) NOT NULL,
 `planet` VARCHAR(50) NOT NULL,
@@ -62,14 +63,15 @@ PRIMARY KEY (`id`)
 
 INSERT INTO
 `user`
-(`id`, `nom`, `email`, `mdp`, `planet`)
+(`id`, `nom`, `prenom`, `email`, `mdp`, `planet`)
 VALUES
-(NULL, 'Yasin', 'yasin.karaca@outlook.fr', 'blabla', 'Terre')
+(NULL, 'Karaca', 'Yasin', 'yasin.karaca@outlook.fr', 'blabla', 'Terre')
 ;
 
 CREATE TABLE `space`.`place` (
 `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 `nom` VARCHAR(50) NOT NULL,
+`prenom` VARCHAR(50) NOT NULL,
 `email` VARCHAR(50) NOT NULL,
 `planet` VARCHAR(50) NOT NULL,
 `category` VARCHAR(50) NOT NULL,
@@ -83,6 +85,7 @@ PRIMARY KEY (`id`)
 CREATE TABLE `space`.`rent` (
 `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 `nom` VARCHAR(50) NOT NULL,
+`prenom` VARCHAR(50) NOT NULL,
 `email` VARCHAR(50) NOT NULL,
 `category` VARCHAR(50) NOT NULL,
 `dateBegin` DATE NOT NULL,

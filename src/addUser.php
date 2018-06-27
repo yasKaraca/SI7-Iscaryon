@@ -1,31 +1,42 @@
-<?php include 'header.php'?>
-<form action="doAddUser.php" method="post">
-    <div>
-        <label for="nom">Votre nom :</label>
-        <input title="nom" type="text" name="nom" required>
+<?php
+require_once 'include/connection.php';
+
+include 'header.php';
+
+
+if ($_SESSION['auth']) {
+    include 'navConnect.php';
+} else {
+    include 'navUnconnect.php';
+}
+?>
+<div class="form-container">
+    <h2 class="form-container-title">inscription</h2>
+<form class="form-container-content" action="doAddUser.php" method="post">
+    <div class="form-container-content-item">
+        <input title="nom" type="text" name="nom" placeholder="Nom ..." required>
     </div>
-    <div>
-        <label for="email">Adresse e-mail :</label>
-        <input title="email" type="email" name="email" required>
+    <div class="form-container-content-item">
+        <input title="prenom" type="text" name="prenom" placeholder="Prénom ..." required>
     </div>
-    <div>
-        <label for="mdp">Mot de passe :</label>
-        <input id="password" title="mdp" type="password" name="mdp" required>
+    <div class="form-container-content-item">
+        <input title="email" type="email" name="email" placeholder="E-mail (ex: iscaryon@net.com)" required>
     </div>
-    <div>
-        <label for="mdp-confirm">Confirmer mot de passe :</label>
-        <input id="confirmPassword" title="mdp-confirm" type="password" name="mdp-confirm" required>
+    <div class="form-container-content-item">
+        <input id="password" title="mdp" type="password" name="mdp" placeholder="Mot de passe ..." required>
+    </div>
+    <div class="form-container-content-item">
+        <input id="confirmPassword" title="mdp-confirm" type="password" name="mdp-confirm" placeholder="Confirmer mot de passe" required>
         <span id="message"></span>
     </div>
-    <div>
-        <label for="planet">Planète d'origine :</label>
-        <input title="planet" type="text" name="planet" required>
+    <div class="form-container-content-item">
+        <input title="planet" type="text" name="planet" placeholder="Planète d'origine" required>
     </div>
-    <div>
+    <div class="form-container-content-item">
         <input type="submit" value="S'inscire sur Iscaryon">
     </div>
 </form>
-
+</div>
 <script type="text/javascript">
     $('#password, #confirmPassword').on('keyup', function () {
         if ($('#password').val() == $('#confirmPassword').val()) {
@@ -35,4 +46,7 @@
     });
     
 </script>
+<?php
+include 'footer.php';
+?>
 

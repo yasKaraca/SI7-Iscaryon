@@ -10,6 +10,7 @@ require_once 'include/connection.php';
 $profil = "SELECT 
     `id`,
     `nom`,
+    `prenom`,
     `email`,
     `mdp`,
     `planet`
@@ -29,6 +30,7 @@ if ($user) {
         'auth' => true,
         'id' => $user['id'],
         'nom' => $user['nom'],
+        'prenom' => $user['prenom'],
         'email' => $user['email'],
         'planet' => $user['planet']
     ];

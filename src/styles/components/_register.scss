@@ -1,0 +1,38 @@
+.form-container {
+  width: 90%;
+  margin: 5vh auto 0 auto;
+  color: white;
+  @include for-size(desktop-up) {
+    width: 70%;
+  }
+  &-title {
+    text-align: center;
+    font-family: 'Ailerons';
+    font-size: 2rem;
+  }
+  &-content {
+    &-item {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      & input {
+        width: 90%;
+        text-align: center;
+        height: 40px;
+        background-color: rgba(107,106,106,0.25);
+        border: 1px solid #8B8787;
+        color: white;
+      }
+      & input::placeholder {
+        color: white;
+        opacity: 0.5;
+        font-family: 'Ubuntu', sans-serif;
+      }
+      & input::value {
+        color: white;
+        opacity: 0.5;
+        font-family: 'Ubuntu', sans-serif;
+      }
+    }
+  }
+}
