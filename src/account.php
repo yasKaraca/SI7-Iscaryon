@@ -18,15 +18,19 @@ $stmt->execute();
 $infos = $stmt ->fetch(PDO::FETCH_ASSOC);
 
 include 'header.php';
-
-    echo '<div>';
-    echo '<p>Nom : '.$infos['nom'].'</p>';
-    echo '<p>E-mail : '.$infos['email'].'</p>';
-    echo '<p>Mot de passe : ********</p>';
-    echo '<p>Planète : '.$infos['planet'].'</p>';
-    echo '<a href="editAccount.php?id='.$infos['id'].'">Modifier informations</a></br>';
-    echo '<a href="deleteAccount.php?id='.$infos['id'].'">Supprimer mon compte</a>';
-    echo '</div>';
 ?>
 
-<a href="index.php">accueil</a>
+<h2 class="accountTitle">mes informations</h2>
+
+<?php
+    echo '<div class="account">';
+    echo '<p class="account-text">Nom : '.$infos['nom'].'</p>';
+    echo '<p class="account-text">E-mail : '.$infos['email'].'</p>';
+    echo '<p class="account-text">Mot de passe : ********</p>';
+    echo '<p class="account-text">Planète : '.$infos['planet'].'</p>';
+    echo '<div class="account-box"><div class="account-box-btn"><a href="editAccount.php?id='.$infos['id'].'">Modifier informations</a></div>';
+    echo '<div class="account-box-btn"><a href="deleteAccount.php?id='.$infos['id'].'">Supprimer mon compte</a></div></div>';
+    echo '</div>';
+
+    include 'footer.php';
+?>
