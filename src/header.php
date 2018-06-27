@@ -18,3 +18,11 @@ session_start();
     <img class="burger" src="img/menu.svg">
 </header>
 
+<?php
+if ($_SESSION['auth']) {
+    include 'navConnect.php';
+} else {
+    include 'navUnconnect.php';
+}
+?>
+

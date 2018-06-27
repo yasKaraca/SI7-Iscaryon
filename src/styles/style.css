@@ -353,6 +353,73 @@ a {
     color: white;
     font-family: 'Ubuntu', sans-serif; }
 
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto; }
+  @media (min-width: 1200px) {
+    .book {
+      padding-top: 90px;
+      padding-bottom: 90px; } }
+  @media (min-width: 949px) {
+    .book {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline; } }
+  .book-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin: 10px 0; }
+    @media (min-width: 949px) {
+      .book-item {
+        width: 33%;
+        justify-content: flex-start; } }
+    .book-item select {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      height: 30px;
+      background-color: rgba(107, 106, 106, 0.25);
+      border: 1px solid #8B8787;
+      color: white; }
+    .book-item input {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      height: 30px;
+      background-color: rgba(107, 106, 106, 0.25);
+      border: 1px solid #8B8787;
+      color: white; }
+    .book-item-title {
+      font-family: 'Ailerons';
+      margin: 10px 0;
+      font-size: 1.2rem;
+      text-align: center; }
+    .book-item-libel {
+      font-family: 'Ubuntu Medium', sans-serif;
+      margin: 10px 0; }
+    .book-item-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      margin: 0 auto;
+      font-family: 'Ubuntu Medium', sans-serif;
+      background-color: rgba(13, 95, 84, 0.25);
+      border: 1px solid #0D5F54; }
+
+.submit {
+  width: 100%; }
+  @media (min-width: 949px) {
+    .submit input {
+      width: 27%; } }
+
 @font-face {
   font-family: 'Ailerons';
   src: url("../fonts/ailerons-typeface-webfont.woff2") format("woff2"), url("../fonts/ailerons-typeface-webfont.woff") format("woff"), url("../fonts/ailerons-typeface-webfont.ttf") format("opentype");
@@ -366,6 +433,10 @@ a {
 @font-face {
   font-family: 'Ubuntu Light';
   src: url("../fonts/Ubuntu-Light.ttf") format("opentype"); }
+
+@font-face {
+  font-family: 'Ubuntu Medium';
+  src: url("../fonts/Ubuntu-Medium.ttf") format("opentype"); }
 
 .body {
   background-image: url("../img/spaceBlack.png");

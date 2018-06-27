@@ -3,12 +3,6 @@ require_once 'include/connection.php';
 
 include 'header.php';
 
-
-if ($_SESSION['auth']) {
-    include 'navConnect.php';
-} else {
-    include 'navUnconnect.php';
-}
 ?>
 <section class="content">
     <div class="content-top">

@@ -3,12 +3,6 @@ require_once 'include/connection.php';
 
 include 'header.php';
 
-
-if ($_SESSION['auth']) {
-    include 'navConnect.php';
-} else {
-    include 'navUnconnect.php';
-}
 ?>
 <div class="form-container">
     <h2 class="form-container-title">inscription</h2>

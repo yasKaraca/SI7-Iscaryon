@@ -2,15 +2,7 @@
 require_once 'include/connection.php';
 
 include 'header.php';
-
-
-if ($_SESSION['auth']) {
-    include 'navConnect.php';
-} else {
-    include 'navUnconnect.php';
-}
 ?>
-
 <section class="welcome">
     <div class="welcome-top">
         <div class="topHorizontalLine"></div>
@@ -25,7 +17,7 @@ if ($_SESSION['auth']) {
     <h3 class="welcome-choice">Êtes-vous un commerçant ou un visiteur</h3>
     <div class="welcome-answer">
         <div class="welcome-answer-link"><a class="welcome-answer-link-text"href="visitor.php">Visiteur</a></div>
-        <div class="welcome-answer-link"><a class="welcome-answer-link-text"href="#">Commerçant</a></div>
+        <div class="welcome-answer-link"><a class="welcome-answer-link-text"href="vendor.php">Commerçant</a></div>
     </div>
 </section>
 
