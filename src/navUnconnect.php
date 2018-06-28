@@ -9,10 +9,14 @@
     $('.burger').click(function () {
         if(open) {
             $('.nav').css('display', 'none');
+            $('.open').css('display', 'block');
+            $('.close').css('display', 'none');
             open = false;
             return;
         }
         $('.nav').css('display', 'block');
+        $('.open').css('display', 'none');
+        $('.close').css('display', 'block');
         open = true;
     })
 </script>

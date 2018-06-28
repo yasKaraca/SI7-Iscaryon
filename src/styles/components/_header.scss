@@ -12,6 +12,9 @@
   right: 20px;
   position: absolute;
   cursor: pointer;
+  @include for-size(desktop-up) {
+    display: none;
+  }
 }
 
 .nav {
@@ -35,4 +38,32 @@
       font-size: 2rem;
     }
   }
+}
+
+.navHeader {
+  display: none;
+  position: absolute;
+  right: 20px;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 80%;
+  @include for-size(desktop-up) {
+    display: flex;
+  }
+  &-item {
+    text-align: center;
+    & a {
+      color: white;
+      font-family: 'Ailerons';
+    }
+  }
+}
+
+.smallHeader {
+  width: 20%;
+}
+
+.close {
+  display: none;
 }

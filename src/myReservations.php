@@ -24,8 +24,8 @@ $bookings = $stmt -> fetchAll();
 
 include "header.php";
 ?>
+<h2 class="resa-title">mes reservations</h2>
 <section class="resa">
-    <h2 class="resa-title">mes reservations</h2>
 <?
 foreach ($bookings as $booking) {
     echo '<div class="resa-item">';

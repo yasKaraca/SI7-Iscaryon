@@ -51,6 +51,9 @@ a {
   right: 20px;
   position: absolute;
   cursor: pointer; }
+  @media (min-width: 1200px) {
+    .burger {
+      display: none; } }
 
 .nav {
   display: none;
@@ -70,6 +73,29 @@ a {
       color: white;
       font-family: 'Ailerons';
       font-size: 2rem; }
+
+.navHeader {
+  display: none;
+  position: absolute;
+  right: 20px;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 80%; }
+  @media (min-width: 1200px) {
+    .navHeader {
+      display: flex; } }
+  .navHeader-item {
+    text-align: center; }
+    .navHeader-item a {
+      color: white;
+      font-family: 'Ailerons'; }
+
+.smallHeader {
+  width: 20%; }
+
+.close {
+  display: none; }
 
 .welcome {
   width: 90%;
@@ -361,8 +387,7 @@ a {
   margin: 0 auto; }
   @media (min-width: 1200px) {
     .book {
-      padding-top: 90px;
-      padding-bottom: 90px; } }
+      padding-bottom: 100px; } }
   @media (min-width: 949px) {
     .book {
       flex-direction: row;
@@ -419,6 +444,14 @@ a {
   @media (min-width: 949px) {
     .submit input {
       width: 27%; } }
+
+.bookTitle {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Ailerons';
+  margin: 70px 0;
+  width: 100%; }
 
 .accountTitle {
   text-align: center;
@@ -587,6 +620,13 @@ a {
         width: 80%;
         flex-direction: row;
         flex-wrap: wrap; } }
+
+.rentSubTitle {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Ailerons';
+  margin: 40px 0; }
 
 @font-face {
   font-family: 'Ailerons';
