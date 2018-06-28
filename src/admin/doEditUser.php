@@ -1,6 +1,6 @@
 <?php
 
-if(!isset($_POST['nom']) || $_POST['nom']==="" || !isset($_POST['prenom']) || $_POST['prenom']==="" || !isset($_POST['email']) || $_POST['email']==="" || !isset($_POST['mdp']) || $_POST['mdp']==="" || !isset($_POST['mdp-confirm']) || $_POST['mdp-confirm']==="" || !isset($_POST['planet']) || $_POST['planet']==="")
+if(!isset($_POST['nom']) || $_POST['nom']==="" || !isset($_POST['prenom']) || $_POST['prenom']==="" || !isset($_POST['email']) || $_POST['email']==="" || !isset($_POST['planet']) || $_POST['planet']==="")
 {
     header('Location: account.php?error=nopostdatacreate');
     exit();
@@ -11,7 +11,7 @@ if($_POST['mdp']!==$_POST['mdp-confirm']) {
     exit();
 }
 
-require_once 'include/connection.php';
+require_once '../include/connection.php';
 
 $edit = "UPDATE
     `user`
@@ -19,7 +19,6 @@ $edit = "UPDATE
     `nom` = :nom,
     `prenom` = :prenom,
     `email` = :email,
-    `mdp` = :mdp,
     `planet` = :planet
     WHERE
     id = :id
@@ -30,7 +29,6 @@ $stmt->bindValue(':id', htmlentities($_POST['id']));
 $stmt->bindValue(':nom', htmlentities($_POST['nom']));
 $stmt->bindValue(':prenom', htmlentities($_POST['prenom']));
 $stmt->bindValue(':email', htmlentities($_POST['email']));
-$stmt->bindValue(':mdp', htmlentities($_POST['mdp']));
 $stmt->bindValue(':planet', htmlentities($_POST['planet']));
 $stmt->execute();
-header('Location: account.php');
+header('Location: users.php');

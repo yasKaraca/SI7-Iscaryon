@@ -13,7 +13,7 @@ if($_POST['mdp']!==$_POST['mdp-confirm']) {
     exit();
 }
 
-require_once 'include/connection.php';
+require_once '../include/connection.php';
 
 $requete = "INSERT INTO 
 `user`
@@ -29,4 +29,4 @@ $stmt->bindValue(':email', htmlentities($_POST['email']));
 $stmt->bindValue(':mdp', htmlentities($_POST['mdp']));
 $stmt->bindValue(':planet', htmlentities($_POST['planet']));
 $stmt->execute();
-header('Location: index.php');
+header('Location: users.php');
