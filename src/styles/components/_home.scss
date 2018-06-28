@@ -111,23 +111,55 @@
   margin: 0 auto;
   color: white;
   margin-top: 6vh;
+  @include for-size(desktop-up) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  @include for-size(tablet-portrait-up) {
+    width: 70%;
+  }
   &-top {
     position: relative;
     padding: 5vh 0;
     display: flex;
     justify-content: center;
+    @include for-size(desktop-up) {
+      width: 50%;
+    }
   }
-  &-title {
-    margin-top: 5vh;
-    text-align: center;
-    font-family: 'Ailerons';
-    font-size: 1.5rem;
+  &-bot {
+    @include for-size(desktop-up) {
+      width: 50%;
+    }
+    &-title {
+      margin-top: 5vh;
+      text-align: center;
+      font-family: 'Ailerons';
+      font-size: 1.5rem;
+    }
+    &-text {
+      margin-top: 5vh;
+      text-align: center;
+      font-family: 'Ubuntu Light', sans-serif;
+      line-height: 1.8em;
+    }
   }
-  &-text {
-    margin-top: 5vh;
-    text-align: center;
-    font-family: 'Ubuntu Light', sans-serif;
-    line-height: 1.8em;
+  &-imgContainer {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-img {
+    max-width: 90%;
+    max-height: 90%;
+    @include for-size(desktop-up) {
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 }
 
@@ -135,6 +167,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 5%;
   &-item {
     width: 45%;
     margin-top: 5vh;
@@ -147,5 +180,18 @@
       width: 100%;
       margin-top: 3vh;
     }
+  }
+}
+
+.desktop {
+  display: none;
+  @include for-size(desktop-up) {
+    display: block;
+  }
+}
+
+.desktopReset{
+  @include for-size(desktop-up) {
+    display: none;
   }
 }
