@@ -1,0 +1,62 @@
+.headerAdmin {
+  color: white;
+  font-family: 'Ubuntu Medium', sans-serif;
+  & h2 {
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Ailerons';
+    font-size: 2.3rem;
+  }
+  &-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include for-size(tablet-landscape-up) {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 60%;
+      margin: 0 auto;
+    }
+    & a {
+      color: white;
+      margin: 10px 0;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.adminRes {
+  padding: 20px;
+  color: white;
+  font-family: 'Ubuntu Light', sans-serif;
+  display: flex;
+  flex-direction: column;
+  & a {
+    color: white;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    text-decoration: underline;
+  }
+  & h2 {
+    margin: 20px 0;
+  }
+}
+table {
+  color: white;
+  font-family: 'Ubuntu Light', sans-serif;
+  text-align: center;
+  min-width: 900px;
+  & tr {
+    height: 40px;
+    & a {
+      color: white;
+    }
+  }
+}
+
+.adminAdd {
+  & input::placeholder {
+    color: white;
+  }
+}
+

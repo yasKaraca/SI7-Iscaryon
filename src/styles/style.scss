@@ -11,6 +11,7 @@
 @import "components/_editAccount.scss";
 @import "components/_delete.scss";
 @import "components/_resa.scss";
+@import "components/_admin.scss";
 
 @font-face {
   font-family: 'Ailerons';
@@ -40,4 +41,6 @@
   background-image: url("../img/spaceBlack.png");
   background-size: cover;
   background-position: center;
+  width: 100%;
+  height: 100vh;
 }

@@ -20,8 +20,8 @@ $profil = "SELECT
     `email` = :email AND `mdp` = :mdp;";
 
 $stmt=$conn->prepare($profil);
-$stmt->bindValue(':email', $_POST['email']);
-$stmt->bindValue(':mdp', $_POST['mdp']);
+$stmt->bindValue(':email', htmlentities($_POST['email']));
+$stmt->bindValue(':mdp', htmlentities($_POST['mdp']));
 $stmt->execute();
 $user = $stmt -> fetch(PDO::FETCH_ASSOC);
 

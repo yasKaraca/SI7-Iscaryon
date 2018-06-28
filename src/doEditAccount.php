@@ -26,11 +26,11 @@ $edit = "UPDATE
     ;";
 
 $stmt = $conn->prepare($edit);
-$stmt->bindValue(':id', $_POST['id']);
-$stmt->bindValue(':nom', $_POST['nom']);
-$stmt->bindValue(':prenom', $_POST['prenom']);
-$stmt->bindValue(':email', $_POST['email']);
-$stmt->bindValue(':mdp', $_POST['mdp']);
-$stmt->bindValue(':planet', $_POST['planet']);
+$stmt->bindValue(':id', htmlentities($_POST['id']));
+$stmt->bindValue(':nom', htmlentities($_POST['nom']));
+$stmt->bindValue(':prenom', htmlentities($_POST['prenom']));
+$stmt->bindValue(':email', htmlentities($_POST['email']));
+$stmt->bindValue(':mdp', htmlentities($_POST['mdp']));
+$stmt->bindValue(':planet', htmlentities($_POST['planet']));
 $stmt->execute();
 header('Location: account.php');

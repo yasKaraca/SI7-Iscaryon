@@ -2,7 +2,7 @@
 include 'header.php';
 ?>
     <h2 class="bookTitle">reserver un logement</h2>
-<form class="book" action="doRent.php" method="post">
+<form class="book resetPadding" action="doRent.php" method="post">
     <div class="book-item">
         <div class="book-item-number">1</div>
         <p class="book-item-title">type de produit</p>
