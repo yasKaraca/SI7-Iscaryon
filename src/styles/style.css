@@ -509,6 +509,85 @@ a {
     .editAccountTitle {
       margin: 35px 0; } }
 
+.delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 100px auto 0 auto;
+  color: white;
+  height: 50vh;
+  font-family: 'Ubuntu Light', sans-serif;
+  padding-bottom: 50px; }
+  .delete p {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    text-align: center; }
+  .delete input {
+    border: 1px solid #006A61;
+    background-color: rgba(0, 106, 97, 0.25);
+    color: white;
+    font-family: 'Ubuntu Light', sans-serif;
+    height: 40px;
+    width: 320px;
+    margin-top: 50px; }
+  .delete-back {
+    text-align: center;
+    color: white;
+    background-color: rgba(107, 106, 106, 0.25);
+    border: 1px solid #8B8787;
+    padding: 10px;
+    width: 300px;
+    margin-top: 50px; }
+  .delete-icon {
+    background-color: rgba(208, 2, 27, 0.25);
+    border: 1px solid #D0021B;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.resa {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+  @media (min-width: 949px) {
+    .resa {
+      width: 80%; } }
+  @media (min-width: 1200px) {
+    .resa {
+      padding: 14vh 0; } }
+  .resa-title {
+    text-align: center;
+    font-family: 'Ailerons';
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+    margin: 20px 0; }
+  .resa-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 80%;
+    margin: 10px auto;
+    justify-content: space-around;
+    font-family: 'Ubuntu Light',sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+    border: 1px solid #006A61;
+    padding: 10px 0; }
+    @media (min-width: 600px) {
+      .resa-item {
+        width: 50%; } }
+    @media (min-width: 1200px) {
+      .resa-item {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap; } }
+
 @font-face {
   font-family: 'Ailerons';
   src: url("../fonts/ailerons-typeface-webfont.woff2") format("woff2"), url("../fonts/ailerons-typeface-webfont.woff") format("woff"), url("../fonts/ailerons-typeface-webfont.ttf") format("opentype");

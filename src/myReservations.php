@@ -23,19 +23,18 @@ $stmt->execute();
 $bookings = $stmt -> fetchAll();
 
 include "header.php";
-
+?>
+<section class="resa">
+    <h2 class="resa-title">mes reservations</h2>
+<?
 foreach ($bookings as $booking) {
-    echo '<div>';
-    echo '<p>'.$booking['nom'].'</p>';
-    echo '<p>'.$booking['prenom'].'</p>';
-    echo '<p>'.$booking['email'].'</p>';
-    echo '<p>'.$booking['planet'].'</p>';
-    echo '<p>'.$booking['category'].'</p>';
-    echo '<p>'.$booking['dateBegin'].'</p>';
-    echo '<p>'.$booking['dateEnd'].'</p>';
-    echo '<a href="deleteReservation.php?id='.$booking['id'].'">Supprimer</a>';
+    echo '<div class="resa-item">';
+    echo '<p >Type de produits :<br>'.$booking['category'].'</p>';
+    echo '<p >Date de début :<br>'.$booking['dateBegin'].'</p>';
+    echo '<p >Date de fin :<br>'.$booking['dateEnd'].'</p>';
+    echo '<a href="deleteReservation.php?id='.$booking['id'].'"><div class="delete-icon"><img src="img/delete.png"></div></a>';
     echo '</div>';
 }
 ?>
-
-<a href="index.php">accueil</a>
+</section>
+<?php include 'footer.php'; ?>

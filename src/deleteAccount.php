@@ -16,12 +16,16 @@ $stmt = $conn->prepare($delete);
 $stmt->bindValue(':id', $_GET['id']);
 $stmt->execute();
 $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+include 'header.php';
 ?>
 
-<form action="doDeleteAccount.php" method="post">
+
+<form class="delete" action="doDeleteAccount.php" method="post">
     <input type="hidden" name="id" value="<?=$row['id']?>">
     <p>Êtes-vous sur de vouloir supprimer votre compte ?</p>
     <input type="submit" value="Supprimer mon compte">
+    <a class="delete-back" href="account.php">Retourner sur mon espace personnel</a>
 </form>
 
-<a href="account.php">Retourner sur mon espace personnel</a>
+<?php include 'footer.php';?>
