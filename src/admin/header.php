@@ -15,6 +15,6 @@
     <div class="headerAdmin-nav">
         <a href="reservations.php">Réservations</a>
         <a href="logements.php">Logements</a>
-        <a href="#">Membres</a>
+        <a href="users.php">Membres</a>
     </div>
 </header>

@@ -30,7 +30,6 @@ include 'header.php'; ?>
             <th>Nom</th>
             <th>Prénom</th>
             <th>E-mail</th>
-            <th>Planète</th>
             <th>Catégorie</th>
             <th>Date début</th>
             <th>Date fin</th>
@@ -42,7 +41,6 @@ include 'header.php'; ?>
             echo '<td>'.$rent['nom'].'</td>';
             echo '<td>'.$rent['prenom'].'</td>';
             echo '<td>'.$rent['email'].'</td>';
-            echo '<td>'.$rent['planet'].'</td>';
             echo '<td>'.$rent['dateBegin'].'</td>';
             echo '<td>'.$rent['dateEnd'].'</td>';
             echo '<td><a href="editLog.php?id='.$rent['id'].'">Modifier</a></td>';

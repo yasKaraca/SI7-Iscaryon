@@ -28,9 +28,13 @@ include 'header.php';
 <form class="book adminAdd" action="doEditRes.php" method="post">
     <input type="hidden" name="id" value="<?= $_GET['id'] ?>">
     <div class="book-item">
+        <label class="book-item-libel" for="nom">Nom :</label>
         <input title="nom" type="text" name="nom" value="<?= $row['nom'] ?>"  required>
+        <label class="book-item-libel" for="prenom">Prénom :</label>
         <input title="prenom" type="text" name="prenom" value="<?= $row['prenom'] ?>" required>
+        <label class="book-item-libel" for="email">E-mail :</label>
         <input title="email" type="email" name="email" value="<?= $row['email'] ?>" required>
+        <label class="book-item-libel" for="planet">Planète :</label>
         <input title="planet" type="text" name="planet" value="<?= $row['planet'] ?>" required>
     </div>
     <div class="book-item">
