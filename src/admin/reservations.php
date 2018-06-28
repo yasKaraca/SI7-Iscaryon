@@ -48,8 +48,8 @@ include 'header.php';
             echo '<td>'.$reservation['category'].'</td>';
             echo '<td>'.$reservation['dateBegin'].'</td>';
             echo '<td>'.$reservation['dateEnd'].'</td>';
-            echo '<td><a href="delete.php?id='.$reservation['id'].'">Modifier</a></td>';
-            echo '<td><a href="delete.php?id='.$reservation['id'].'">Supprimer</a></td>';
+            echo '<td><a href="editRes.php?id='.$reservation['id'].'">Modifier</a></td>';
+            echo '<td><a href="deleteRes.php?id='.$reservation['id'].'">Supprimer</a></td>';
             echo '</tr>';
         }
         ?>
