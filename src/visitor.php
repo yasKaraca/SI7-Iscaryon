@@ -8,43 +8,60 @@ include 'header.php';
     <div class="content-top">
         <div class="topHorizontalLine"></div>
         <div class="topVerticalLine"></div>
-        <img src="img/marche.png">
+        <div class="content-imgContainer">
+            <img class="content-img" src="img/zakera.jpg">
+        </div>
         <div class="botHorizontalLine"></div>
         <div class="botVerticalLine"></div>
     </div>
-    <h2 class="content-title"> La place  zakera</br>Le coeur d'Iscaryon</h2>
-    <p class="content-text">La place Zakera est l’endroit où des marchands issue des 4 coins de la galaxie
-        viennent proposer leurs marchandises chaques jours de nouveaux marchands arrive et repartent alors profiter-en !</p>
+    <div class="content-bot">
+        <h2 class="content-bot-title"> La place  zakera</br>Le coeur d'Iscaryon</h2>
+        <p class="content-bot-text">La place Zakera est l’endroit où des marchands issue des 4 coins de la galaxie
+            viennent proposer leurs marchandises chaques jours de nouveaux marchands arrive et repartent alors profiter-en !</p>
+    </div>
 </section>
 
 <section class="content">
+    <div class="content-bot desktop">
+        <h2 class="content-bot-title"> La place  otarion</br>L'esprit d'Iscaryon</h2>
+        <p class="content-bot-text">Vous avez eu une journée difficile ? Vous êtes en vacances ou tout simplement en week-end ?
+            Venez vous détendre et vous amusez à la place Otarion !</p>
+    </div>
     <div class="content-top">
         <div class="topHorizontalLine"></div>
         <div class="topVerticalLine"></div>
-        <img src="img/otarion.png">
+        <div class="content-imgContainer" style="position: relative;">
+            <p style="position: absolute; top: 40%; left: 40%; color: white">Coucouc est ce que ca marche</p>
+            <img class="content-img" src="img/otarion.jpg">
+        </div>
         <div class="botHorizontalLine"></div>
         <div class="botVerticalLine"></div>
     </div>
-    <h2 class="content-title"> La place  otarion</br>L'esprit d'Iscaryon</h2>
-    <p class="content-text">Vous avez eu une journée difficile ? Vous êtes en vacances ou tout simplement en week-end ?
-        Venez vous détendre et vous amusez à la place Otarion !</p>
+    <div class="content-bot desktopReset">
+        <h2 class="content-bot-title"> La place  otarion</br>L'esprit d'Iscaryon</h2>
+        <p class="content-bot-text">Vous avez eu une journée difficile ? Vous êtes en vacances ou tout simplement en week-end ?
+            Venez vous détendre et vous amusez à la place Otarion !</p>
+    </div>
 </section>
 
 <section class="activity">
     <div class="activity-item">
         <p class="activity-item-text">Restaurant</p>
-        <img class="activity-item-img" src="img/restaurant.png">
+        <img class="activity-item-img" src="img/restaurant.jpg">
     </div>
     <div class="activity-item">
         <p class="activity-item-text">Bar</p>
-        <img class="activity-item-img" src="img/bar.png">
+        <img class="activity-item-img" src="img/bar.jpg">
     </div>
     <div class="activity-item">
         <p class="activity-item-text">Bibliothèque</p>
-        <img class="activity-item-img" src="img/library.png">
+        <img class="activity-item-img" src="img/library.jpg">
     </div>
     <div class="activity-item">
         <p class="activity-item-text">Stade de foot</p>
-        <img class="activity-item-img" src="img/stade.png">
+        <img class="activity-item-img" src="img/stade.jpg">
     </div>
 </section>
+<?php
+include 'footer.php';
+?>

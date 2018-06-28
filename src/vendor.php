@@ -1,6 +1,7 @@
 <?php
+require_once 'include/connection.php';
 if ($_SESSION['auth']) {
-    include 'rent.php';
+    include 'bookPlace.php';
 } else {
     include 'login.php';
 }
