@@ -1,0 +1,39 @@
+.accountTitle {
+  text-align: center;
+  color: white;
+  font-family: 'Ailerons';
+  font-size: 2rem;
+  margin: 40px 0;
+}
+
+.account {
+  color: white;
+  font-family: 'Ubuntu Light', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 75px;
+  @include for-size(tablet-landscape-up) {
+    padding-bottom: 50px;
+  }
+  &-text {
+    margin: 20px 0;
+  }
+  &-box {
+    display: flex;
+    justify-content: center;
+    &-btn {
+      margin: 20px 10px;
+      background-color: rgba(0,106,97,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #006A61;
+      width: 180px;
+      height: 40px;
+      & a {
+        color: white;
+      }
+    }
+  }
+}

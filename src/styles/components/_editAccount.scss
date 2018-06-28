@@ -1,0 +1,61 @@
+.editAccount {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Ubuntu Light', sans-serif;
+  text-align: left;
+  &-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    height: 30px;
+    @include for-size(tablet-portrait-up) {
+      width: 60%;
+    }
+    @include for-size(tablet-landscape-up) {
+      width: 50%;
+    }
+    & label {
+      width: 60%;
+    }
+    & input {
+      width: 40%;
+      text-align: center;
+      background-color: rgba(107, 106, 106, 0.25);
+      border: 1px solid #8B8787;
+      color: white;
+      font-size: 0.8rem;
+      @include for-size(tablet-landscape-up) {
+        height: 30px;
+      }
+    }
+  }
+  &-submit {
+    margin: 20px 0;
+    & input {
+      border: 1px solid #006A61;
+      background-color: rgba(0,106,97,0.25);
+      color: white;
+      font-family: 'Ubuntu Light', sans-serif;
+      height: 30px;
+      @include for-size(tablet-landscape-up) {
+        height: 40px;
+      }
+    }
+  }
+}
+
+.editAccountTitle {
+  text-align: center;
+  color: white;
+  font-family: 'Ailerons';
+  font-size: 2rem;
+  margin: 45px 0;
+  @include for-size(tablet-landscape-up) {
+    margin: 35px 0;
+  }
+}

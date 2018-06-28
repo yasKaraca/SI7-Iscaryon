@@ -15,7 +15,15 @@ session_start();
 
 <header class="header">
     <a href="index.php"><img src="img/logomobile.png"></a>
-    <img class="burger" src="img/menu.svg">
+    <?php
+    if ($_SESSION['auth']) {
+        include 'headerConnect.php';
+    } else {
+        include 'headerUnconnect.php';
+    }
+    ?>
+    <img class="burger open" src="img/menu.svg">
+    <img class="burger close" src="img/close.svg">
 </header>
 
 <?php

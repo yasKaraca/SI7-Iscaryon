@@ -51,6 +51,9 @@ a {
   right: 20px;
   position: absolute;
   cursor: pointer; }
+  @media (min-width: 1200px) {
+    .burger {
+      display: none; } }
 
 .nav {
   display: none;
@@ -70,6 +73,29 @@ a {
       color: white;
       font-family: 'Ailerons';
       font-size: 2rem; }
+
+.navHeader {
+  display: none;
+  position: absolute;
+  right: 20px;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 80%; }
+  @media (min-width: 1200px) {
+    .navHeader {
+      display: flex; } }
+  .navHeader-item {
+    text-align: center; }
+    .navHeader-item a {
+      color: white;
+      font-family: 'Ailerons'; }
+
+.smallHeader {
+  width: 20%; }
+
+.close {
+  display: none; }
 
 .welcome {
   width: 90%;
@@ -361,8 +387,7 @@ a {
   margin: 0 auto; }
   @media (min-width: 1200px) {
     .book {
-      padding-top: 90px;
-      padding-bottom: 90px; } }
+      padding-bottom: 100px; } }
   @media (min-width: 949px) {
     .book {
       flex-direction: row;
@@ -419,6 +444,189 @@ a {
   @media (min-width: 949px) {
     .submit input {
       width: 27%; } }
+
+.bookTitle {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Ailerons';
+  margin: 70px 0;
+  width: 100%; }
+
+.accountTitle {
+  text-align: center;
+  color: white;
+  font-family: 'Ailerons';
+  font-size: 2rem;
+  margin: 40px 0; }
+
+.account {
+  color: white;
+  font-family: 'Ubuntu Light', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 75px; }
+  @media (min-width: 949px) {
+    .account {
+      padding-bottom: 50px; } }
+  .account-text {
+    margin: 20px 0; }
+  .account-box {
+    display: flex;
+    justify-content: center; }
+    .account-box-btn {
+      margin: 20px 10px;
+      background-color: rgba(0, 106, 97, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #006A61;
+      width: 180px;
+      height: 40px; }
+      .account-box-btn a {
+        color: white; }
+
+.editAccount {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Ubuntu Light', sans-serif;
+  text-align: left; }
+  .editAccount-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    height: 30px; }
+    @media (min-width: 600px) {
+      .editAccount-content {
+        width: 60%; } }
+    @media (min-width: 949px) {
+      .editAccount-content {
+        width: 50%; } }
+    .editAccount-content label {
+      width: 60%; }
+    .editAccount-content input {
+      width: 40%;
+      text-align: center;
+      background-color: rgba(107, 106, 106, 0.25);
+      border: 1px solid #8B8787;
+      color: white;
+      font-size: 0.8rem; }
+      @media (min-width: 949px) {
+        .editAccount-content input {
+          height: 30px; } }
+  .editAccount-submit {
+    margin: 20px 0; }
+    .editAccount-submit input {
+      border: 1px solid #006A61;
+      background-color: rgba(0, 106, 97, 0.25);
+      color: white;
+      font-family: 'Ubuntu Light', sans-serif;
+      height: 30px; }
+      @media (min-width: 949px) {
+        .editAccount-submit input {
+          height: 40px; } }
+
+.editAccountTitle {
+  text-align: center;
+  color: white;
+  font-family: 'Ailerons';
+  font-size: 2rem;
+  margin: 45px 0; }
+  @media (min-width: 949px) {
+    .editAccountTitle {
+      margin: 35px 0; } }
+
+.delete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 100px auto 0 auto;
+  color: white;
+  height: 50vh;
+  font-family: 'Ubuntu Light', sans-serif;
+  padding-bottom: 50px; }
+  .delete p {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    text-align: center; }
+  .delete input {
+    border: 1px solid #006A61;
+    background-color: rgba(0, 106, 97, 0.25);
+    color: white;
+    font-family: 'Ubuntu Light', sans-serif;
+    height: 40px;
+    width: 320px;
+    margin-top: 50px; }
+  .delete-back {
+    text-align: center;
+    color: white;
+    background-color: rgba(107, 106, 106, 0.25);
+    border: 1px solid #8B8787;
+    padding: 10px;
+    width: 300px;
+    margin-top: 50px; }
+  .delete-icon {
+    background-color: rgba(208, 2, 27, 0.25);
+    border: 1px solid #D0021B;
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.resa {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto; }
+  @media (min-width: 949px) {
+    .resa {
+      width: 80%; } }
+  @media (min-width: 1200px) {
+    .resa {
+      padding: 14vh 0; } }
+  .resa-title {
+    text-align: center;
+    font-family: 'Ailerons';
+    color: white;
+    width: 100%;
+    font-size: 2rem;
+    margin: 20px 0; }
+  .resa-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 80%;
+    margin: 10px auto;
+    justify-content: space-around;
+    font-family: 'Ubuntu Light',sans-serif;
+    text-align: center;
+    line-height: 1.5em;
+    border: 1px solid #006A61;
+    padding: 10px 0; }
+    @media (min-width: 600px) {
+      .resa-item {
+        width: 50%; } }
+    @media (min-width: 1200px) {
+      .resa-item {
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap; } }
+
+.rentSubTitle {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Ailerons';
+  margin: 40px 0; }
 
 @font-face {
   font-family: 'Ailerons';

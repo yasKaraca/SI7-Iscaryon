@@ -1,10 +1,11 @@
 <?php
     include 'header.php';
 ?>
+<h2 class="bookTitle">reserver un emplacement</h2>
 <form class="book" action="doBookPlace.php" method="post">
     <div class="book-item">
         <div class="book-item-number">1</div>
-        <p class="book-item-title align">type de produit</p>
+        <p class="book-item-title">type de produit</p>
         <label class="book-item-libel" for="category">Vous vendez principalement :</label>
         <select class="align" title="category" name="category">
             <option value="alimentaire">Alimentaire</option>
