@@ -14,7 +14,7 @@
     <h2>Iscaryon Admin</h2>
     <div class="headerAdmin-nav">
         <a href="reservations.php">Réservations</a>
-        <a href="#">Logements</a>
+        <a href="logements.php">Logements</a>
         <a href="#">Membres</a>
     </div>
 </header>

@@ -55,3 +55,5 @@ include 'header.php';
         ?>
     </table>
 </section>
+
+<?php  include 'footer.php'; ?>

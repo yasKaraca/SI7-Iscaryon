@@ -25,13 +25,9 @@
         <label class="book-item-libel" for="date2">Date de fin :</label>
         <input title="date fin" type="date" name="date2" required>
     </div>
-  <!--  <div class="book-item">
-        <label class="book-item-libel" for="cb">Numéro de carte bancaire :</label>
-        <input title="numéro carte bancaire" type="text" name="cb" required>
-        <label class="book-item-libel" for="crypt">Cryptogramme :</label>
-        <input title="cryptogramme" type="text" name="crypt" required>
-    </div>-->
     <div class="book-item submit">
         <input type="submit" value="Ajouter un emplacement">
     </div>
 </form>
+
+<?php  include 'footer.php'; ?>
