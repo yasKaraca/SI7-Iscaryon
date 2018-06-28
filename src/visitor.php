@@ -30,7 +30,8 @@ include 'header.php';
     <div class="content-top">
         <div class="topHorizontalLine"></div>
         <div class="topVerticalLine"></div>
-        <div class="content-imgContainer">
+        <div class="content-imgContainer" style="position: relative;">
+            <p style="position: absolute; top: 40%; left: 40%; color: white">Coucouc est ce que ca marche</p>
             <img class="content-img" src="img/otarion.jpg">
         </div>
         <div class="botHorizontalLine"></div>

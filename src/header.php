@@ -14,7 +14,7 @@ session_start();
 <body class="body">
 
 <header class="header">
-    <a href="index.php"><img src="img/logomobile.png"></a>
+    <a href="index.php"><img class="header-logo" src="img/headerlogo.png"></a>
     <?php
     if ($_SESSION['auth']) {
         include 'headerConnect.php';
