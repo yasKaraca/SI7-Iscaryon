@@ -45,7 +45,7 @@ include 'header.php';
             <option value="technologie">Technologie</option>
             <option value="textile">Textile</option>
             <option value="pierres précieuses">Pierres précieuses</option>
-            <option value="bazar">Bazar</option>
+            <option value="bibelots">Bibelots</option>
             <option value="autre">Autre</option>
         </select>
     </div>

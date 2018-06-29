@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7906a0a5-da6f-4f57-ac6a-5b1b114355c6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/rent.php" afterPath="$PROJECT_DIR$/src/rent.php" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/_footer.scss" afterPath="$PROJECT_DIR$/src/styles/components/_footer.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/_header.scss" afterPath="$PROJECT_DIR$/src/styles/components/_header.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/_home.scss" afterPath="$PROJECT_DIR$/src/styles/components/_home.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/components/_reservation.scss" afterPath="$PROJECT_DIR$/src/styles/components/_reservation.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/style.css" afterPath="$PROJECT_DIR$/src/styles/style.css" />
-      <change beforePath="$PROJECT_DIR$/src/visitor.php" afterPath="$PROJECT_DIR$/src/visitor.php" />
+      <change beforePath="$PROJECT_DIR$/src/admin/addRes.php" afterPath="$PROJECT_DIR$/src/admin/addRes.php" />
+      <change beforePath="$PROJECT_DIR$/src/admin/editRes.php" afterPath="$PROJECT_DIR$/src/admin/editRes.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_home.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_home.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/components/_home.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
@@ -83,45 +78,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="2" lean-forward="true" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="command.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.reference/command.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="65" column="44" lean-forward="false" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bookPlace.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bookPlace.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bookPlace.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="50" />
+            <state relative-caret-position="570">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myReservations.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/myReservations.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <folding>
+                <marker date="1530145877982" expanded="true" signature="64:231" ph="SELECT `id`,... place" />
+                <marker date="1530145877982" expanded="true" signature="64:256" ph="SELECT `id`,... place" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addRes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/admin/addRes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="editRes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/admin/editRes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="47" column="45" lean-forward="false" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+              <folding>
+                <marker date="1530237407158" expanded="true" signature="156:322" ph="SELECT `id`,... place" />
+                <marker date="1530237407158" expanded="true" signature="162:308" ph="INSERT INTO place" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,7 +168,6 @@
         <option value="$PROJECT_DIR$/src/admin/footer.php" />
         <option value="$PROJECT_DIR$/src/admin/reservations.php" />
         <option value="$PROJECT_DIR$/src/admin/index.php" />
-        <option value="$PROJECT_DIR$/src/admin/addRes.php" />
         <option value="$PROJECT_DIR$/src/admin/doAddRes.php" />
         <option value="$PROJECT_DIR$/src/admin/doAddLog.php" />
         <option value="$PROJECT_DIR$/src/admin/addLog.php" />
@@ -178,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/admin/doEditLog.php" />
         <option value="$PROJECT_DIR$/src/admin/editLog.php" />
         <option value="$PROJECT_DIR$/src/admin/deleteLog.php" />
-        <option value="$PROJECT_DIR$/src/admin/editRes.php" />
         <option value="$PROJECT_DIR$/src/admin/header.php" />
         <option value="$PROJECT_DIR$/src/admin/users.php" />
         <option value="$PROJECT_DIR$/src/admin/addUser.php" />
@@ -189,12 +185,14 @@
         <option value="$PROJECT_DIR$/src/admin/logements.php" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/src/styles/components/_footer.scss" />
-        <option value="$PROJECT_DIR$/src/bookPlace.php" />
         <option value="$PROJECT_DIR$/src/styles/components/_reservation.scss" />
         <option value="$PROJECT_DIR$/src/styles/components/_header.scss" />
         <option value="$PROJECT_DIR$/src/rent.php" />
         <option value="$PROJECT_DIR$/src/visitor.php" />
         <option value="$PROJECT_DIR$/src/styles/components/_home.scss" />
+        <option value="$PROJECT_DIR$/src/admin/addRes.php" />
+        <option value="$PROJECT_DIR$/src/admin/editRes.php" />
+        <option value="$PROJECT_DIR$/src/bookPlace.php" />
       </list>
     </option>
   </component>
@@ -345,12 +343,12 @@
       <workItem from="1529915810910" duration="21653000" />
       <workItem from="1530006055062" duration="33090000" />
       <workItem from="1530093675271" duration="29374000" />
-      <workItem from="1530173551822" duration="30171000" />
+      <workItem from="1530173551822" duration="31585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135307000" />
+    <option name="totallyTimeSpent" value="136721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="781" extended-state="0" />
@@ -422,17 +420,6 @@
         <state relative-caret-position="375">
           <caret line="25" column="50" lean-forward="true" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myReservations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <marker date="1530145877982" expanded="true" signature="64:231" ph="SELECT `id`,... place" />
-            <marker date="1530145877982" expanded="true" signature="64:256" ph="SELECT `id`,... place" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,17 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/editRes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="36" column="50" lean-forward="false" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
-          <folding>
-            <marker date="1530221199221" expanded="true" signature="156:322" ph="SELECT `id`,... place" />
-            <marker date="1530221199221" expanded="true" signature="162:308" ph="INSERT INTO place" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/admin/addLog.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -615,14 +591,6 @@
           <folding>
             <marker date="1530110757309" expanded="true" signature="1350:1388" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/addRes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,14 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bookPlace.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/components/_reservation.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1065">
@@ -860,6 +820,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/components/_home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="115" column="15" lean-forward="false" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/visitor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -868,10 +836,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/components/_home.scss">
+    <entry file="file://$PROJECT_DIR$/src/myReservations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="115" column="15" lean-forward="false" selection-start-line="115" selection-start-column="15" selection-end-line="115" selection-end-column="15" />
+        <state relative-caret-position="330">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <marker date="1530145877982" expanded="true" signature="64:231" ph="SELECT `id`,... place" />
+            <marker date="1530145877982" expanded="true" signature="64:256" ph="SELECT `id`,... place" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/addRes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="45" lean-forward="false" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/editRes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="47" column="45" lean-forward="false" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+          <folding>
+            <marker date="1530237407158" expanded="true" signature="156:322" ph="SELECT `id`,... place" />
+            <marker date="1530237407158" expanded="true" signature="162:308" ph="INSERT INTO place" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bookPlace.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
