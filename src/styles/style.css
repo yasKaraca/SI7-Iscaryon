@@ -44,10 +44,17 @@ a {
   background-color: rgba(24, 28, 44, 0.6);
   border-top: 2px solid #171E3A;
   border-bottom: 2px solid #171E3A;
-  height: 100px; }
+  height: 80px; }
+  @media (min-width: 949px) {
+    .header {
+      height: 100px; } }
   .header-logo {
-    height: 80px;
-    margin-left: 50px; }
+    height: 60px;
+    margin-left: 20px; }
+    @media (min-width: 949px) {
+      .header-logo {
+        margin-left: 50px;
+        height: 80px; } }
 
 .burger {
   width: 25px;
@@ -92,7 +99,8 @@ a {
     text-align: center; }
     .navHeader-item a {
       color: white;
-      font-family: 'Ailerons'; }
+      font-family: 'Ailerons';
+      font-size: 1.2rem; }
 
 .smallHeader {
   width: 20%; }
@@ -196,9 +204,8 @@ a {
 
 .content {
   width: 90%;
-  margin: 0 auto;
   color: white;
-  margin-top: 6vh; }
+  margin: 5vh auto 0 auto; }
   @media (min-width: 1200px) {
     .content {
       display: flex;
@@ -224,10 +231,11 @@ a {
     font-family: 'Ailerons';
     font-size: 1.5rem; }
   .content-bot-text {
-    margin-top: 5vh;
     text-align: center;
     font-family: 'Ubuntu Light', sans-serif;
-    line-height: 1.8em; }
+    line-height: 1.8em;
+    width: 90%;
+    margin: 10% auto 0 auto; }
   .content-imgContainer {
     width: 90%;
     height: 90%;
@@ -245,18 +253,23 @@ a {
 
 .activity {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 5%; }
   .activity-item {
     width: 45%;
-    margin-top: 5vh; }
+    margin-top: 5vh;
+    max-height: 300px; }
+    @media (min-width: 1200px) {
+      .activity-item {
+        width: 40%; } }
     .activity-item-text {
       color: white;
       text-align: center;
       font-family: 'Ubuntu', sans-serif; }
     .activity-item-img {
       width: 100%;
+      height: 90%;
       margin-top: 3vh; }
 
 .desktop {
@@ -289,15 +302,12 @@ a {
       font-family: 'Ubuntu Light', sans-serif; }
   .footer-mid {
     display: flex;
-    justify-content: center;
     margin-top: 20px; }
     .footer-mid-text {
       color: white;
-      margin: 0 5px;
+      text-align: center;
+      margin: 0 auto;
       font-family: 'Ubuntu Light', sans-serif; }
-      @media (min-width: 1200px) {
-        .footer-mid-text {
-          margin: 0 20px; } }
   .footer-bot {
     display: flex;
     justify-content: center;
@@ -498,8 +508,8 @@ a {
   color: white;
   font-size: 2rem;
   font-family: 'Ailerons';
-  margin: 70px 0;
-  width: 100%; }
+  width: 100%;
+  margin: 20px 0; }
 
 .resetPadding {
   padding-bottom: 50px; }

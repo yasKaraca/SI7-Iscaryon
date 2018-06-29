@@ -4,10 +4,17 @@
   background-color: rgba(24,28,44,0.6);
   border-top: 2px solid #171E3A;
   border-bottom: 2px solid #171E3A;;
-  height: 100px;
+  height: 80px;
+  @include for-size(tablet-landscape-up) {
+    height: 100px;
+  }
   &-logo {
-    height: 80px;
-    margin-left: 50px;
+    height: 60px;
+    margin-left: 20px;
+    @include for-size(tablet-landscape-up) {
+      margin-left: 50px;
+      height: 80px;
+    }
   }
 }
 
@@ -60,6 +67,7 @@
     & a {
       color: white;
       font-family: 'Ailerons';
+      font-size: 1.2rem;
     }
   }
 }
