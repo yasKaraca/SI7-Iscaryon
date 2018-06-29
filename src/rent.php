@@ -66,7 +66,7 @@ $rents = $stmt -> fetchAll();
 <?php
 foreach ($rents as $rent) {
     echo '<div class="resa-item">';
-    echo '<p><Type de chambre : '.$rent['category'].'</p>';
+    echo '<p>Type de chambre : '.$rent['category'].'</p>';
     echo '<p>Date de début : '.$rent['dateBegin'].'</p>';
     echo '<p>Date de fin : '.$rent['dateEnd'].'</p>';
     echo '<a href="deleteRent.php?id='.$rent['id'].'"><div class="delete-icon"><img src="img/delete.png"></div></a>';

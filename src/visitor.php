@@ -17,7 +17,7 @@ include 'header.php';
     <div class="content-bot">
         <h2 class="content-bot-title"> La place  zakera</br>Le coeur d'Iscaryon</h2>
         <p class="content-bot-text">La place Zakera est l’endroit où des marchands issue des 4 coins de la galaxie
-            viennent proposer leurs marchandises chaques jours de nouveaux marchands arrive et repartent alors profiter-en !</p>
+            viennent proposer leurs marchandises. Chaques jour de nouveaux marchands arrivent et repartent alors profitez-en !</p>
     </div>
 </section>
 
@@ -30,8 +30,7 @@ include 'header.php';
     <div class="content-top">
         <div class="topHorizontalLine"></div>
         <div class="topVerticalLine"></div>
-        <div class="content-imgContainer" style="position: relative;">
-            <p style="position: absolute; top: 40%; left: 40%; color: white">Coucouc est ce que ca marche</p>
+        <div class="content-imgContainer">
             <img class="content-img" src="img/otarion.jpg">
         </div>
         <div class="botHorizontalLine"></div>
