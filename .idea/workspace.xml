@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7906a0a5-da6f-4f57-ac6a-5b1b114355c6" name="Default" comment="" />
+    <list default="true" id="7906a0a5-da6f-4f57-ac6a-5b1b114355c6" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/readme.md" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -94,12 +96,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="command.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="command.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.reference/command.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
               <caret line="65" column="44" lean-forward="false" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -124,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/account.php" />
         <option value="$PROJECT_DIR$/src/styles/components/_account.scss" />
         <option value="$PROJECT_DIR$/src/editAccount.php" />
         <option value="$PROJECT_DIR$/src/styles/components/_editAccount.scss" />
@@ -175,6 +189,7 @@
         <option value="$PROJECT_DIR$/src/admin/doEditUser.php" />
         <option value="$PROJECT_DIR$/src/admin/deleteUser.php" />
         <option value="$PROJECT_DIR$/src/admin/logements.php" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -325,12 +340,12 @@
       <workItem from="1529915810910" duration="21653000" />
       <workItem from="1530006055062" duration="33090000" />
       <workItem from="1530093675271" duration="29374000" />
-      <workItem from="1530173551822" duration="27909000" />
+      <workItem from="1530173551822" duration="28092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133045000" />
+    <option name="totallyTimeSpent" value="133228000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="781" extended-state="0" />
@@ -381,14 +396,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/styles/components/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/navConnect.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -854,6 +861,17 @@
         <state relative-caret-position="114">
           <caret line="65" column="44" lean-forward="false" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
