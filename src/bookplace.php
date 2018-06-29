@@ -12,7 +12,7 @@
             <option value="technologie">Technologie</option>
             <option value="textile">Textile</option>
             <option value="pierres précieuses">Pierres précieuses</option>
-            <option value="bazar">Bazar</option>
+            <option value="bibelots">Bibelots</option>
             <option value="autre">Autre</option>
         </select>
     </div>
@@ -20,8 +20,8 @@
         <div class="book-item-number">2</div>
         <p class="book-item-title">Choix de la période</p>
         <label class="book-item-libel" for="date1">Date de début :</label>
-        <input title="date début" type="date" name="date1" required>
-        <label class="book-item-libel" for="date2">Date de fin :</label>
+        <input title="date début" type="date" name="date1" id="startd" required>
+        <label class="book-item-libel" for="date2" id="endd">Date de fin :</label>
         <input title="date fin" type="date" name="date2" required>
     </div>
     <div class="book-item">
@@ -36,6 +36,7 @@
         <input type="submit" value="Réserver un emplacement">
     </div>
 </form>
+
 <?php
    include 'footer.php';
 ?>
