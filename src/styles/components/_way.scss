@@ -1,0 +1,45 @@
+
+.way {
+  margin: 0 auto;
+
+
+&-content {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+}
+
+&-contentOne {
+  width: 31px;
+  height: 31px;
+  border: solid 1px;
+  text-align: center;
+  border-color: #8B8787;
+}
+
+&-bar {
+  width: 40.1px;
+  height: 2px;
+  background-color: #FFF;
+}
+
+
+
+
+
+}
+p {
+  margin-top: 5px;
+  font-size: 19px;
+  color: #FFF;
+}
+.row {
+  justify-content: center;
+}
+.one {
+  opacity: 25%;
+  border-color: #006A61;
+  background-color: #006A61;
+}

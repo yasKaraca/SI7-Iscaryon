@@ -1,5 +1,7 @@
-@import "global/variables";
-@import "mixins/forsize";
+@import "global/variables.scss";
+@import "mixins/forsize.scss";
+@import "components/way.scss";
+@import "components/choice.scss";
 
 h1 {
   color: pink;

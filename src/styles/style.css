@@ -1,2 +1,52 @@
+.way {
+  margin: 0 auto; }
+  .way-content {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 0;
+    align-items: center; }
+  .way-contentOne {
+    width: 31px;
+    height: 31px;
+    border: solid 1px;
+    text-align: center;
+    border-color: #8B8787; }
+  .way-bar {
+    width: 40.1px;
+    height: 2px;
+    background-color: #FFF; }
+
+p {
+  margin-top: 5px;
+  font-size: 19px;
+  color: #FFF; }
+
+.row {
+  justify-content: center; }
+
+.one {
+  opacity: 25%;
+  border-color: #006A61;
+  background-color: #006A61; }
+
+.choice {
+  z-index: 1;
+  margin: 0 auto;
+  padding: 40 0px; }
+  .choice:last-child {
+    padding-bottom: 0; }
+  .choice-content {
+    margin: 0;
+    text-align: center; }
+  .choice-boxContent {
+    width: 269px;
+    background-color: #006A61;
+    opacity: 25%;
+    height: 51px;
+    border: solid #006A61;
+    margin: 0 auto;
+    margin-top: 10px; }
+
 h1 {
   color: pink; }
